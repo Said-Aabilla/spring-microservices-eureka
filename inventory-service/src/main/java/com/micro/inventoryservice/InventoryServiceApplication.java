@@ -17,9 +17,9 @@ public class InventoryServiceApplication {
 	@Bean
 	CommandLineRunner start(ProductRestResourceRepository productRestResourceRepository) {
 		return args -> {
-			productRestResourceRepository.save(new Product(null, "prod 1", 100));
-			productRestResourceRepository.save(new Product(null, "prod 2", 200));
-			productRestResourceRepository.save(new Product(null, "prod 3", 300));
+			productRestResourceRepository.save(new Product(1L, "prod 1", 100));
+			productRestResourceRepository.save(new Product(2L, "prod 2", 200));
+			productRestResourceRepository.save(new Product(3L, "prod 3", 300));
 		};
 	}
 }

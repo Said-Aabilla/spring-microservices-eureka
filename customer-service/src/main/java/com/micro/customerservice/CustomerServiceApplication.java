@@ -17,9 +17,9 @@ public class CustomerServiceApplication {
 	@Bean
 	CommandLineRunner start(CustomerRestResourceRepository customerRestResourceRepository) {
 		return args -> {
-			customerRestResourceRepository.save(new Customer(null, "customer 1", "cust1@micro.com"));
-			customerRestResourceRepository.save(new Customer(null, "customer 2", "cust2@micro.com"));
-			customerRestResourceRepository.save(new Customer(null, "customer 3", "cust3@micro.com"));
+			customerRestResourceRepository.save(new Customer(1L, "customer 1", "cust1@micro.com"));
+			customerRestResourceRepository.save(new Customer(2L, "customer 2", "cust2@micro.com"));
+			customerRestResourceRepository.save(new Customer(3L, "customer 3", "cust3@micro.com"));
 		};
 	}
 }

@@ -34,7 +34,6 @@ public class BillingServiceApplication {
             Bill bill = new Bill();
             bill.setBillingDate(new Date());
             Customer customer = customerServiceClient.findCustomerById(1L);
-            System.out.println(customerServiceClient.findCustomerById(1L).toString());
             bill.setCustomerId(customer.getId());
             billRestRepository.save(bill);
 
