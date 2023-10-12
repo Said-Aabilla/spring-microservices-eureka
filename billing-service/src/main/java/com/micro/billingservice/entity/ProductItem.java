@@ -2,10 +2,14 @@ package com.micro.billingservice.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 public class ProductItem  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
